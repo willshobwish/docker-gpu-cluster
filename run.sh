@@ -1,0 +1,1 @@
+docker run --runtime=nvidia --gpus all --device=/dev/nvidia-uvm --device=/dev/nvidia-uvm-tools --device=/dev/nvidia-modeset --device=/dev/nvidiactl --device=/dev/nvidia0 -d -it -u $(id -u):$(id -g) --name nome-do-container -v /caminho/para/sua/pasta:/caminho/para/pasta/dentro/container nome-da-imagem

@@ -1,9 +1,0 @@
-services:
-  tensorflow-gpu:
-    build: .
-    volumes:
-      - ./teste-host:/teste-container
-    runtime: nvidia
-    environment:
-      - NVIDIA_VISIBLE_DEVICES=all
-    command: ["bash", "-c", "id -u $USER; id -g $USER"]
